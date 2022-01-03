@@ -115,7 +115,7 @@ function showAllTweetToUI(items) {
   listTweet.innerHTML = "";
   items.forEach((item) => {
     const listElm = `<li class='list-tweer-group tweet-${item.id} mb-3'>
-              ${item.name}  - <small>${item.time}</small> <button class="btn btn-danger delete">Delete</button> <button class="btn btn-warning edit">edit</button>
+              ${item.name}  - <small style="color: red">${item.time}</small> <button class="btn btn-danger delete">Delete</button> <button class="btn btn-warning edit">edit</button>
               
             </li>`;
     listTweet.insertAdjacentHTML("afterbegin", listElm);
@@ -190,7 +190,7 @@ function gettingInput() {
 
 function addToUi(id, name, time) {
   const listElm = `<li class='list-tweer-group tweet-${id} mb-3'>
-              ${name} - <small>${time}</small><button class="btn btn-danger delete">Delete</button> <button class="btn btn-warning edit">edit</button>
+              ${name} - <small style="color: red">${time}</small><button class="btn btn-danger delete">Delete</button> <button class="btn btn-warning edit">edit</button>
              
             </li>`;
   listTweet.insertAdjacentHTML("afterbegin", listElm);
